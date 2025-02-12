@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h2>All Expenses</h2>
+<div class="cards-container">
+  <% expenses.forEach(expense => { %>
+  <div class="card">
+    <h3><%= expense.name %></h3>
+    <p>Amount: $<%= expense.amount %></p>
+    <a href="/expense-list/<%= expense.id %>">Show Details</a>
+    <form
+      action="/expense-list/<%= expense.id %>/delete"
+      method="POST"
+      style="display: inline"
+    >
+      <button type="submit">Delete</button>
+    </form>
+  </div>
+  <% }) %>
+</div>
+
+<%- include('partials/footer') %>

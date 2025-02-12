@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+<h2>Expense Details</h2>
+<div class="card">
+  <h3><%= expense.name %></h3>
+  <p>Amount: $<%= expense.amount %></p>
+  <a href="/expense-list">Back to List</a>
+</div>
+
+<%- include('partials/footer') %>
