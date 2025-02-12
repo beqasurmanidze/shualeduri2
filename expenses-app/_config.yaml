@@ -1,0 +1,10 @@
+title: Expense Tracker App
+description: A simple expense tracking application built with Express.js
+url: "https://beqasurmanidze.github.io"
+baseurl: "/shualeduri2"
+theme: minima
+
+# გამოიყენე საჭირო პლაგინები
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
